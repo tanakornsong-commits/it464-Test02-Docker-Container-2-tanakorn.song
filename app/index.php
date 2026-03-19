@@ -1,7 +1,7 @@
 <?php
 // 1. กำหนดค่าการเชื่อมต่อฐานข้อมูลโดยดึงชื่อจาก .env [5]
-$host = 'db-sever'; // แก้ไขให้ตรงกับค่าทีอยู่ใน Docker Compose หรือ .env
-$user = 'tanakorn.song'; // แก้ไขให้ตรงกับค่าที่อยู่ใน Docker Compose หรือ .env
+$host = 'db-node'; // แก้ไขให้ตรงกับค่าทีอยู่ใน Docker Compose หรือ .env
+$user = 'root'; // แก้ไขให้ตรงกับค่าที่อยู่ใน Docker Compose หรือ .env
 $db   = 'event_db'; // แก้ไขให้ตรงกับค่าที่อยู่ใน Docker Compose หรือ .env
 
 // 2. กฎเหล็กด้านความปลอดภัย: อ่านรหัสผ่านจาก Docker Secret แทนการเขียนไว้ในโค้ด [7]
