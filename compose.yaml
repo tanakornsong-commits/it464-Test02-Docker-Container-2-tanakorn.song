@@ -31,7 +31,7 @@ services:
 
   # 3. ส่วนรับงานหน้าบ้าน (Web Proxy)
   web-server:
-    image: ninx:latest # (3.1) เติมชื่อ Image ที่ต้องการใช้ เช่น nginx:latest
+    image: nginx:latest # (3.1) เติมชื่อ Image ที่ต้องการใช้ เช่น nginx:latest
     container_name: ${MY_USERNAME}-web # (3.2) กำหนดชื่อคอนเทนเนอร์ให้สอดคล้องกับ .env [4]
     volumes:
       - ./app:/var/www/html
