@@ -52,7 +52,7 @@ services:
     image: phpmyadmin:latest
     container_name: ${MY_USERNAME}-pma # (4.1) กำหนดชื่อคอนเทนเนอร์ให้สอดคล้องกับ .env [4]
     environment:
-      PMA_HOST: db-sever # (4.2) เติมชื่อบริการฐานข้อมูลที่ประกาศด้านบน [1]
+      PMA_HOST: db-node # (4.2) เติมชื่อบริการฐานข้อมูลที่ประกาศด้านบน [1]
       PMA_PASSWORD_FILE: /run/secrets/db_pass # (4.3) เติมชื่อ Secret ที่ประกาศด้านล่าง [10]
     ports:
       - "${PMA_PORT}:80" # (4.4) กำหนดพอร์ตให้สอดคล้องกับ .env [4]
