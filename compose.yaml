@@ -72,7 +72,7 @@ networks:
     driver: bridge
 
 volumes:
-  db-volume:  # (5.1) ชื่อ Named Volume ที่ใช้ให้ตรงกับด้านบน [9]
+  db-volume: db-storage # (5.1) ชื่อ Named Volume ที่ใช้ให้ตรงกับด้านบน [9]
 
 configs:
   my-nginx-conf:
