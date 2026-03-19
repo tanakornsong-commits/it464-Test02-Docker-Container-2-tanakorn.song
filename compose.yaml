@@ -1,4 +1,4 @@
-name: ${PROJECT_NAME} # (0) กำหนดชื่อโปรเจคให้สอดคล้องกับ .env [4]
+name: ${PROJECT_NAME:Test02} # (0) กำหนดชื่อโปรเจคให้สอดคล้องกับ .env [4]
 
 services:
   # 1. ฐานข้อมูล (Database)
